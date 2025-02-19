@@ -1,0 +1,31 @@
+<div class="task-list">
+  <h2>Lista de Tareas</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Descripción</th>
+        <th>Estado</th>
+        <th>Fecha de Vencimiento</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <td>{{ task.id }}</td>
+        <td>{{ task.title }}</td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.status }}</td>
+        <td>{{ task.dueDate }}</td>
+        <td>
+          <button (click)="deleteTask(task.id)">Eliminar</button>
+          <button (click)="editTask(task.id)">Editar</button>
+          <button *ngIf="task.status === 'Pendiente'" (click)="completeTask(task)">Completar tarea</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="createTask()">Crear tarea</button>
+</div>
