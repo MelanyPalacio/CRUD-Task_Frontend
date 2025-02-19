@@ -3,9 +3,10 @@ Este repositorio contiene la parte frontend de una aplicación de gestión de ta
 
 ## 🚀 Tecnologías utilizadas
 - Angular 17
-- - Typescript
+  - Angular router
+  - Angular Material
+- Typescript
 - RxJS
-- Angular Material
 - VSC
 
 ---
