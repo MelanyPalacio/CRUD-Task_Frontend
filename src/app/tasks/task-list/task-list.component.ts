@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-task-list',
   templateUrl: './task-list.component.html',
+  styleUrl: './task-list.component.css',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
 })

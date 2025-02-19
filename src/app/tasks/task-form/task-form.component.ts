@@ -4,9 +4,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { TaskService } from '../task.service';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-task-form',
   templateUrl: './task-form.component.html',
+  styleUrl: './task-form.component.css',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
 })

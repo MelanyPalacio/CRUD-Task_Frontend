@@ -19,7 +19,8 @@
         <td>{{ task.description }}</td>
         <td>{{ task.status }}</td>
         <td>{{ task.dueDate }}</td>
-        <td>
+
+        <td class="actions">
           <button (click)="deleteTask(task.id)">Eliminar</button>
           <button (click)="editTask(task.id)">Editar</button>
           <button *ngIf="task.status === 'Pendiente'" (click)="completeTask(task)">Completar tarea</button>
@@ -27,5 +28,8 @@
       </tr>
     </tbody>
   </table>
+<div>
   <button (click)="createTask()">Crear tarea</button>
+</div>
+  
 </div>

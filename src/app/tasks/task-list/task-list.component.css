@@ -1,0 +1,92 @@
+.task-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+  }
+  
+  thead {
+    background: #007bff;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:hover {
+    background: #f1f1f1;
+  }
+  
+  td:last-child {
+    display: flex;
+    gap: 8px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    flex: 1;
+  }
+  
+  button:nth-child(1) {
+    background: #dc3545;
+    color: white;
+  }
+  
+  button:nth-child(1):hover {
+    background: #b52a37;
+  }
+  
+  button:nth-child(2) {
+    background: #ffc107;
+    color: black;
+  }
+  
+  button:nth-child(2):hover {
+    background: #e0a800;
+  }
+  
+  button:nth-child(3) {
+    background: #28a745;
+    color: white;
+  }
+  
+  button:nth-child(3):hover {
+    background: #218838;
+  }
+  
+
+  
+  button:last-child:hover {
+    background: #0056b3;
+  }
+
+  actions {
+    display: flex;
+    gap: 8px;
+  }

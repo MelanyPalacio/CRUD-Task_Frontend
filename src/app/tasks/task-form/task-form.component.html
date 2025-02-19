@@ -19,19 +19,21 @@
         <label for="description">Descripción</label>
         <textarea id="description" formControlName="description" class="form-control"></textarea>
       </div>
+    <div class="date-status-group">
+        <div class="form-group">
+            <label for="status">Estado</label>
+            <select id="status" formControlName="status" class="form-control">
+            <option value="Pendiente">Pendiente</option>
+            <option value="Completada">Completada</option>
+            </select>
+        </div>
 
-      <div class="form-group">
-        <label for="status">Estado</label>
-        <select id="status" formControlName="status" class="form-control">
-          <option value="Pendiente">Pendiente</option>
-          <option value="Completada">Completada</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="dueDate">Fecha de Vencimiento</label>
-        <input id="dueDate" type="date" formControlName="dueDate" class="form-control" />
-      </div>
+        <div class="form-group">
+            <label for="dueDate">Fecha de Vencimiento</label>
+            <input id="dueDate" type="date" formControlName="dueDate" class="form-control" />
+        </div>
+    </div>
+      
 
       <div class="form-buttons">
         <button type="submit" class="btn btn-primary" [disabled]="taskForm.invalid">
